@@ -6,10 +6,9 @@
     <title>Crafted - Beautiful Websites for Small Businesses</title>
     <meta name="description" content="Professional web design service for small businesses. Custom websites from R800, fast turnaround, mobile-friendly designs.">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="nav">
@@ -18,8 +17,9 @@
                     <a href="#home">Home</a>
                     <a href="#services">Services</a>
                     <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">
                     <button class="btn btn-hero">Get Started</button>
+                    </a>
                 </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
@@ -27,7 +27,6 @@
             </nav>
         </div>
     </header>
-    <!-- hero-content -->
     <section id="home" class="hero">
         <div class="floating-elements">
             <div class="floating-circle circle-1"></div>
@@ -54,30 +53,21 @@
                 </p>
                 
                 <div class="hero-buttons">
-                    <button class="btn btn-glass">
-                        <span>View Our Work</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </button>
+                   <a href="quote.html" target="_blank">
                     <button class="btn btn-hero-large">
                         Start Your Project - From R800
-                    </button>
+                    </button></a>
                 </div>
                 
                 <div class="hero-features">
-                    ✓ 3-7 Day Turnaround  ✓ Mobile-Friendly  ✓ 30 Days Free Updates
+                    ✓ 3-7 Day Turnaround  ✓ Mobile-Friendly  ✓ 30 Days Free Updates
                 </div>
             </div>
         </div>
-        
-        <div class="hero-wave">
-            <svg viewBox="0 0 1440 120" class="wave">
-                <path fill="white" d="M0,64L1440,96L1440,120L0,120Z"></path>
-            </svg>
-        </div>
+    
     </section>
 
-    <!-- Services Section -->
-     <section id="services" class="services">
+    <section id="services" class="services">
         <div class="container">
             <div class="section-header">
                 <h2>What We <span class="gradient-text">Offer</span></h2>
@@ -100,20 +90,7 @@
                     </ul>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Fast Turnaround</h3>
-                    <p>Get your website live in just 3-7 days</p>
-                    <div class="service-price">3-7 Days</div>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Quick project start</li>
-                        <li><i class="fas fa-check-circle"></i> Daily progress updates</li>
-                        <li><i class="fas fa-check-circle"></i> Priority support</li>
-                        <li><i class="fas fa-check-circle"></i> Fast hosting setup</li>
-                    </ul>
-                </div>
+                
 
                 <div class="service-card">
                     <div class="service-icon">
@@ -158,7 +135,7 @@
                     </div>
                     <div class="benefit">
                         <div class="benefit-icon">
-                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-tiktok"></i>
                         </div>
                         <h4>Social Media Ready</h4>
                         <p>Integrated with your social platforms</p>
@@ -171,12 +148,13 @@
                         <p>Optimized for speed and security</p>
                     </div>
                 </div>
+                <a href="#contact">
                 <button class="btn btn-hero-large">Get Your Website Today</button>
+                </a>
             </div>
         </div>
     </section>
-<!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+<section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
                 <h2>Our <span class="gradient-text">Work</span></h2>
@@ -186,21 +164,23 @@
             <div class="portfolio-grid">
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop" alt="Restaurant Website">
+                        <img src="image/zwakala.jpg" alt="Restaurant Website">
                         <div class="portfolio-overlay">
+                            <a href="https://zwakala.netlify.app/">
                             <button class="btn btn-glass">
                                 <i class="fas fa-external-link-alt"></i>
                                 View Project
                             </button>
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio-content">
-                        <div class="portfolio-category">Restaurant & Food</div>
-                        <h3>Local Restaurant</h3>
-                        <p>Modern restaurant website with online menu and reservation system</p>
+                        <div class="portfolio-category">Zwakala</div>
+                        <h3>Professional sneaker cleaning services</h3>
+                        <p>Modern website showcasing sneaker cleaning services with booking system</p>
                         <div class="portfolio-tags">
-                            <span>Online Menu</span>
-                            <span>Reservations</span>
+                            <span>Booking page</span>
+                            <span>Responsive</span>
                             <span>Mobile-Friendly</span>
                         </div>
                     </div>
@@ -208,29 +188,31 @@
 
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Fitness Studio">
+                        <img src="image/trip.jpg" alt="E-commerce Store">
                         <div class="portfolio-overlay">
+                            <a href="https://ubuhle.netlify.app/">
                             <button class="btn btn-glass">
                                 <i class="fas fa-external-link-alt"></i>
                                 View Project
                             </button>
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio-content">
-                        <div class="portfolio-category">Health & Fitness</div>
-                        <h3>Fitness Studio</h3>
-                        <p>Clean, energetic website for a local fitness studio with class schedules</p>
+                        <div class="portfolio-category">Ubuhle travel&Tours</div>
+                        <h3>Travel agent</h3>
+                        <p>Clean, energetic website for a local travel agency with trip schedules</p>
                         <div class="portfolio-tags">
-                            <span>Class Schedules</span>
+                            <span>Trip Schedules</span>
                             <span>WhatsApp Booking</span>
-                            <span>Instagram Feed</span>
+                            <span>TikTok Feed</span>
                         </div>
                     </div>
                 </div>
-
-                
-
-    <!-- Contact Section -->
+            </div>
+        </div>
+    </section>
+    
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
@@ -249,7 +231,7 @@
                             </div>
                             <div>
                                 <h4>WhatsApp</h4>
-                                <p>+27 XX XXX XXXX</p>
+                                <p>+27 67 262 5561</p>
                             </div>
                         </div>
                         
@@ -259,7 +241,7 @@
                             </div>
                             <div>
                                 <h4>Email</h4>
-                                <p>hello@crafted.co.za</p>
+                                <p>craftedbymella@gmail.com</p>
                             </div>
                         </div>
                         
@@ -346,29 +328,28 @@
                             <input type="checkbox" id="whatsapp">
                             <label for="whatsapp">I'd prefer to discuss via WhatsApp</label>
                         </div>
-                        
+                        <a href="contact.html" target="_blank">
                         <button type="submit" class="btn btn-hero-large btn-full">
                             Get Your Free Quote
                             <i class="fas fa-check-circle"></i>
                         </button>
-                        
+                        </a>
                         <p class="form-note">No spam, just a personalized quote within 24 hours</p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-<!-- Footer -->
-    <footer class="footer">
+<footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>Crafted</h3>
                     <p>Helping small businesses establish a beautiful online presence with affordable, professional websites that drive results.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/27672626155"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@crafted.sites"><i class="fab fa-tiktok"></i></a>
+                        <a href="mailto:craftedbymella@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 
@@ -390,7 +371,6 @@
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Get Quote</a></li>
                     </ul>
                 </div>
             </div>
