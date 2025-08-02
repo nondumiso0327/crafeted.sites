@@ -878,3 +878,7 @@ body {
         margin: 0 0.5rem;
     }
 }
+.nav-links.active {
+  display: block; /* or transform for animation */
+}
+
