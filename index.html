@@ -292,17 +292,16 @@
                 <div class="contact-form-container">
                     <h3>Start Your Project</h3>
                     <form class="contact-form" action="thank-you.html" method="post">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" placeholder="John Doe" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" placeholder="john@example.com" required>
-                            </div>
-                        </div>
-                        
+                      <div class="form-row">
+                    <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required />
+                    </div>
+                   <div class="form-group">
+                    <label for="email">Email Address</label>
+                     <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                   </div>
+                       </div>
                         <div class="form-group">
                             <label for="business">Business Name</label>
                             <input type="text" id="business" placeholder="Your Business Name">
@@ -330,8 +329,7 @@
                         </div>
                         <a href="thank-you.html" target="_blank">
                         <button type="submit" class="btn btn-hero-large btn-full">
-                            Get Your Free Quote
-                            <i class="fas fa-check-circle"></i>
+                            Get Your Free Quote <i class="fas fa-check-circle"></i>
                         </button>
                         </a>
                         <p class="form-note">No spam, just a personalized quote within 24 hours</p>
