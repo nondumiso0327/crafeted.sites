@@ -1,0 +1,31 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #f7a7c0;
+    --secondary-color: #f15252;
+    --accent-color: #f5c4d6;
+    --background-color: #fce4ec;
+    --card-background: rgba(255, 255, 255, 0.7);
+    --text-color: #333333;
+    --light-text-color: #666666;
+    --border-color: rgba(0, 0, 0, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
