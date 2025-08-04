@@ -3,20 +3,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.getElementById('navLinks');
 
   if (menuBtn && navLinks) {
-    // Toggle menu on button click
-    menuBtn.addEventListener('click', (event) => {
-      event.stopPropagation(); // Prevents the click from bubbling up to the document
-      navLinks.classList.toggle('active');
+    // When menu button is clicked, scroll to services and hide menu
+    menuBtn.addEventListener('click', () => {
+      // Scroll to #services smoothly
+      const servicesSection = document.getElementById('services');
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Close the nav menu if it's open
+      navLinks.classList.remove('active');
     });
 
-    // Close the menu if clicking outside
+    // Toggle visibility if needed (optional)
     document.addEventListener('click', (event) => {
-      const isClickInsideMenu = navLinks.contains(event.target);
-      const isClickOnButton = menuBtn.contains(event.target);
-
-      if (!isClickInsideMenu && !isClickOnButton) {
+      const isInside = navLinks.contains(event.target) || menuBtn.contains(event.target);
+      if (!isInside) {
         navLinks.classList.remove('active');
       }
+    });
+
+    // Open menu when user hovers/clicks the nav button (optional for desktop)
+    menuBtn.addEventListener('mouseover', () => {
+      navLinks.classList.add('active');
     });
   }
 });
