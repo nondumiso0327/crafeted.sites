@@ -3,29 +3,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.getElementById('navLinks');
 
   if (menuBtn && navLinks) {
-    // When menu button is clicked, scroll to services and hide menu
-    menuBtn.addEventListener('click', () => {
-      // Scroll to #services smoothly
-      const servicesSection = document.getElementById('services');
-      if (servicesSection) {
-        servicesSection.scrollIntoView({ behavior: 'smooth' });
-      }
-
-      // Close the nav menu if it's open
-      navLinks.classList.remove('active');
+    // Toggle menu on button click
+    menuBtn.addEventListener('click', (event) => {
+      event.stopPropagation();
+      navLinks.classList.toggle('active');
     });
 
-    // Toggle visibility if needed (optional)
+    // Close the menu if clicking outside
     document.addEventListener('click', (event) => {
-      const isInside = navLinks.contains(event.target) || menuBtn.contains(event.target);
-      if (!isInside) {
+      const isClickInsideMenu = navLinks.contains(event.target);
+      const isClickOnButton = menuBtn.contains(event.target);
+
+      if (!isClickInsideMenu && !isClickOnButton && navLinks.classList.contains('active')) {
         navLinks.classList.remove('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     });
 
-    // Open menu when user hovers/clicks the nav button (optional for desktop)
-    menuBtn.addEventListener('mouseover', () => {
-      navLinks.classList.add('active');
+    // Close menu when clicking a nav link (good for mobile)
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
     });
   }
 });
+
